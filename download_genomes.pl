@@ -5,11 +5,11 @@ use Bio::SeqIO;
 use Bio::PrimarySeq;
 
 # Get which kingdom to download
-if( $ARGV[0] and $ARGV[0] =~ /^(viral|bacteria|archeae|fungi|protozoa)$/i ) {
+if( $ARGV[0] and $ARGV[0] =~ /^(viral|bacteria|archaea|fungi|protozoa)$/i ) {
     $kingdom = $ARGV[0];
 }
 else {
-    die "USAGE: download_any.pl (viral|bacteria|archeae|fungi|protozoa)\n";
+    die "USAGE: download_any.pl (viral|bacteria|archaea|fungi|protozoa)\n";
 }
 
 # create a directory
